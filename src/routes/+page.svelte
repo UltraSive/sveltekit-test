@@ -2,6 +2,8 @@
 	import Counter from './Counter.svelte';
 	import welcome from '$lib/images/svelte-welcome.webp';
 	import welcome_fallback from '$lib/images/svelte-welcome.png';
+
+	import { PUBLIC_NAME } from "$env/static/public"
 </script>
 
 <svelte:head>
@@ -18,7 +20,7 @@
 			</picture>
 		</span>
 
-		Demo's new<br />SvelteKit app
+		{PUBLIC_NAME}'s new<br />SvelteKit app
 	</h1>
 
 	<h2>
