@@ -20,7 +20,7 @@
 			</picture>
 		</span>
 
-		{PUBLIC_NAME}'s new<br />SvelteKit app
+		Abigail's new<br />SvelteKit app
 	</h1>
 
 	<h2>
