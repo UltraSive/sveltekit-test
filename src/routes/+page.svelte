@@ -20,7 +20,7 @@
 			</picture>
 		</span>
 
-		Abigail's new<br />SvelteKit app
+		Gillasio's new<br />SvelteKit app
 	</h1>
 
 	<h2>
