@@ -3,6 +3,12 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm ci
 COPY . .
+
+# Build-time variable. Containify passes the app variable with the same name
+# as a build arg, and the dashboard tags it "build".
+ARG PUBLIC_API_URL=http://localhost:3000
+ENV PUBLIC_API_URL=$PUBLIC_API_URL
+
 RUN npm run build && npm prune --omit=dev
 
 FROM node:20-alpine
